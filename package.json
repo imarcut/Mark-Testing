@@ -1,0 +1,18 @@
+{
+  "name": "thinksurance-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imarcut/TaskAutomation.git"
+  },
+  "scripts": {
+    "cy": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.2.1"
+  }
+}
