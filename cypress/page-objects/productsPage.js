@@ -22,22 +22,4 @@ export class ProductsPage {
         this.jacket.click();
         cy.get("#remove-sauce-labs-fleece-jacket").should('be.visible');
     }
-
-    sum(){
-        let sum = 0;
-        let sum1;
-//        cy.get("[class='inventory_item_price']").eq(3)
-//        .invoke('text')
-//        .then(text => +text.replace('$', '').trim())
-//        .then(initial => {
-//            cy.wrap(sum1)
-//        })
-//        sum = sum + sum1;
-        cy.get("[class='inventory_item_price']")
-        .each((index) => {
-            sum += parseFloat(index.text().replace('$', ''))
-            cy.log(sum);
-        })
-        cy.log(sum);
-    }
 }

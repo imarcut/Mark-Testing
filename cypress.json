@@ -1,3 +1,4 @@
 {
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "baseUrl": "https://reqres.in"
 }
