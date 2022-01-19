@@ -37,12 +37,12 @@ export class UserService {
                expect(res.body, 'Response body should have "data" property').to.have.property("data");
                let usersList= res.body.data;
                for (let i in usersList) {
-                   let users = usersList[i];
-                   expect(users, 'Response body should have "avatar" property').to.have.property("avatar");
-                   expect(users, 'Response body should have "email" property').to.have.property("email");
-                   expect(users, 'Response body should have "First Name" property').to.have.property("first_name");
-                   expect(users, 'Response body should have "Last Name" property').to.have.property("last_name")
-                   expect(users, 'Response body should have "id" property').to.have.property("id")
+                   let user = usersList[i];
+                   expect(user, 'Response body should have "email" property').to.have.property("email");
+                   expect(user, 'Response body should have "First Name" property').to.have.property("first_name");
+                   expect(user, 'Response body should have "Last Name" property').to.have.property("last_name")
+                   expect(user, 'Response body should have "avatar" property').to.have.property("avatar");
+                   expect(user, 'Response body should have "id" property').to.have.property("id")
                };
 
                expect(res.body, 'Response body should have "support" property').to.have.property("support");

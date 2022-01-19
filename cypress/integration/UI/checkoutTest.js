@@ -12,6 +12,7 @@ describe('My First Test', () => {
     signInPage.login('standard_user', 'secret_sauce');
     productsPage.addBackpackToCart();
     productsPage.addJacketToCart();
+    productsPage.getProductsSum();
     cartPage.gotToCheckoutOverview("Test", "Test", "1244");
   })
   it('Visit the SwagLabs with locked out user', () => {

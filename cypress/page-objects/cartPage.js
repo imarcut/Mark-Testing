@@ -13,10 +13,6 @@ export class CartPage {
         return cy.get("#first-name");
     }
 
-    get productsPrices() {
-        return cy.get("[class='inventory_item_price']");
-    }
-
     get lastName() {
         return cy.get("#last-name");
     }
@@ -36,14 +32,6 @@ export class CartPage {
         this.lastName.type(lastName);
         this.zipCode.type(zipCode);
         this.continueButton.click();
-
-        // Get the products sum
-        let sum = 0;
-        this.productsPrices.each((index) => {
-            sum += parseFloat(index.text().replace('$', ''))
-            cy.wrap(sum)
-            .as('totalSum')
-        })
 
         // Assert that the products sum is equal to the total sum
         cy.get('@totalSum').then(total => {
