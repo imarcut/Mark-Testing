@@ -14,4 +14,8 @@ describe('Api testing', () => {
    it('Create a user - POST', () => {
        userService.createUser("test", "manager");
    });
+
+   it('Retrieve a single user not found - GET', () => {
+       userService.getSingleUserNotFound(2323232);
+   });
 });

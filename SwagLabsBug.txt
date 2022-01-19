@@ -1,0 +1,19 @@
+SwagLabs Bug
+
+Description
+
+An user can go through  the checkout flow without having products added to his cart
+
+Steps to reproduce:
+1. Login to SwagLabs application
+2. Click on empty cart button
+3. Click on checkout button
+4. Add "First Name", "Last Name" and "Zipcode" information
+5. Click on continue
+6. Click on finish button
+
+Expected result:
+1. An error should appear to warn the user that he has no products selected
+
+Observed result:
+1. The checkout complete page is displayed

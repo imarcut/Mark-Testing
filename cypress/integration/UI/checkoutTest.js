@@ -15,6 +15,7 @@ describe('My First Test', () => {
     productsPage.getProductsSum();
     cartPage.gotToCheckoutOverview("Test", "Test", "1244");
   })
+
   it('Visit the SwagLabs with locked out user', () => {
     signInPage.goToApp('SwagLabs');
     signInPage.login('locked_out_user', 'secret_sauce');

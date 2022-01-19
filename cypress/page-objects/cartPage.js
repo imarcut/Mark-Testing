@@ -1,4 +1,3 @@
-
 import { ProductsPage } from "../page-objects/productsPage"
 
 const productsPage = new ProductsPage();

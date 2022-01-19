@@ -1,4 +1,3 @@
-
 export class UserService {
 
     getSingleUser(userId){
@@ -70,7 +69,18 @@ export class UserService {
                expect(res.body, 'Response body should have "job" property').to.have.property("job");
                expect(res.body, 'Response body should have "name" property').to.have.property("name");
                expect(res.body, 'Response body should have "createdAt" property').to.have.property("createdAt");
+            })
         })
-    })
+    }
+
+    getSingleUserNotFound(userId){
+        cy.request({
+            method: 'GET',
+            failOnStatusCode: false,
+            form: true,
+            url: `/api/users/${userId}`
+        }).then(response => {
+            expect(response.status).to.eq(404);
+        })
     }
 }

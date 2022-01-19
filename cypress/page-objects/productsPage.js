@@ -1,8 +1,11 @@
-
 export class ProductsPage {
 
     get backpack() {
         return cy.get("#add-to-cart-sauce-labs-backpack");
+    }
+
+    get backpackRemoveButton() {
+        return cy.get("#remove-sauce-labs-backpack");
     }
 
     get productsSum() {
@@ -13,23 +16,29 @@ export class ProductsPage {
         return cy.get("#add-to-cart-sauce-labs-fleece-jacket");
     }
 
+    get jacketRemoveButton() {
+        return cy.get("#remove-sauce-labs-fleece-jacket");
+    }
+
     get cartLink() {
         return cy.get("[class='shopping_cart_link']");
     }
 
     addBackpackToCart() {
         this.backpack.click();
-        cy.get("#remove-sauce-labs-backpack").should('be.visible');
+        this.backpackRemoveButton.should('be.visible');
+        this.backpack.should('not.exist');
     }
 
     addJacketToCart() {
         this.jacket.click();
-        cy.get("#remove-sauce-labs-fleece-jacket").should('be.visible');
+        this.jacketRemoveButton.should('be.visible');
+        this.backpack.should('not.exist');
     }
 
     getProductsSum(){
         // Get the products sum
-                let sum = 0;
+        let sum = 0;
         this.productsSum.each((index) => {
             sum += parseFloat(index.text().replace('$', ''))
             cy.wrap(sum)
