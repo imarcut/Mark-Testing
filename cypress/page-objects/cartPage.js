@@ -24,6 +24,10 @@ export class CartPage {
         return cy.get("#continue");
     }
 
+    get itemTotalSumValue() {
+        return cy.get("[class='summary_subtotal_label']");
+    }
+
     get finishButton() {
         return cy.get("#finish");
     }
@@ -34,19 +38,25 @@ export class CartPage {
 
     gotToCheckoutOverview(firstName, lastName, zipCode){
         productsPage.cartLink.click();
+        this.checkout.should("be.visible");
         this.checkout.click();
+        this.firstName.should("be.visible");
         this.firstName.type(firstName);
+        this.lastName.should("be.visible");
         this.lastName.type(lastName);
+        this.zipCode.should("be.visible");
         this.zipCode.type(zipCode);
+        this.continueButton.should("be.visible");
         this.continueButton.click();
 
         // Assert that the products sum is equal to the total sum
         cy.get('@totalSum').then(total => {
-            cy.get("[class='summary_subtotal_label']").should('contain.text', 'Item total: $' + total)
+            this.itemTotalSumValue.should('contain.text', 'Item total: $' + total)
         })
     }
 
     completeCheckout(){
+        this.finishButton.should("be.visible");
         this.finishButton.click();
         this.completeOrderTextMessage.should('be.visible').and('contain.text', 'Your order has been dispatched, and will arrive just as fast as the pony can get there!')
     }
