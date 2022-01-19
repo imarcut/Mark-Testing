@@ -24,6 +24,14 @@ export class CartPage {
         return cy.get("#continue");
     }
 
+    get finishButton() {
+        return cy.get("#finish");
+    }
+
+    get completeOrderTextMessage() {
+        return cy.get("[class='complete-text']");
+    }
+
     gotToCheckoutOverview(firstName, lastName, zipCode){
         productsPage.cartLink.click();
         this.checkout.click();
@@ -36,5 +44,10 @@ export class CartPage {
         cy.get('@totalSum').then(total => {
             cy.get("[class='summary_subtotal_label']").should('contain.text', 'Item total: $' + total)
         })
+    }
+
+    completeCheckout(){
+        this.finishButton.click();
+        this.completeOrderTextMessage.should('be.visible').and('contain.text', 'Your order has been dispatched, and will arrive just as fast as the pony can get there!')
     }
 }
