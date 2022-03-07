@@ -8,11 +8,14 @@
     "url": "https://github.com/imarcut/TaskAutomation.git"
   },
   "scripts": {
-    "cy": "cypress open"
+    "cy": "cypress open",
+    "report": "node generate-report.js",
+    "tests": "cypress run"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cucumber-html-reporter": "^5.5.0",
     "cypress": "^9.2.1"
   }
 }

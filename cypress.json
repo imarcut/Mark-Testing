@@ -1,4 +1,7 @@
 {
   "chromeWebSecurity": false,
+  "defaultCommandTimeout": 4000,
+  "screenshotsFolder": "cypress/test-artifacts/screenshots",
+  "watchForFileChanges": false,
   "baseUrl": "https://reqres.in"
 }
