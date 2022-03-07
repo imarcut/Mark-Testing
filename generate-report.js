@@ -6,7 +6,10 @@ var options = {
     output: 'cypress/test-artifacts/html-reporter/cucumber-report.html',
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
-    launchReport: false
-}
+    launchReport: false,
+    metadata: {
+        "Test Env": "Test"
+    }
+};
 
 reporter.generate(options);
