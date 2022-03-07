@@ -1,4 +1,4 @@
-import { SignInPage } from "../../page-objects/SignInPage"
+import { SignInPage } from "../../page-objects/signInPage"
 import { ProductsPage } from "../../page-objects/productsPage"
 import { CartPage } from "../../page-objects/cartPage"
 
