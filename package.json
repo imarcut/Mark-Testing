@@ -16,6 +16,15 @@
   "license": "ISC",
   "dependencies": {
     "cucumber-html-reporter": "^5.5.0",
-    "cypress": "^9.2.1"
+    "cypress": "^9.2.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-artifacts",
+      "filePrefix": "Auto_"
+    }
   }
 }
