@@ -19,4 +19,6 @@ jobs:
         with:
           browser: chrome
           headless: true
+      - name: Report run
+        run: report
       
