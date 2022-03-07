@@ -1,6 +1,6 @@
-import { SignInPage } from "../../page-objects/SignInPage"
-import { ProductsPage } from "../../page-objects/productsPage"
-import { CartPage } from "../../page-objects/cartPage"
+import { SignInPage } from "../../page-objects/SignInPage.js"
+import { ProductsPage } from "../../page-objects/productsPage.js"
+import { CartPage } from "../../page-objects/cartPage.js"
 
 const signInPage = new SignInPage();
 const productsPage = new ProductsPage();
