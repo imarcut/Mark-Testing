@@ -19,6 +19,4 @@ jobs:
         with:
           browser: chrome
           headless: true
-      - name: Report run
-        run: node generate-report.js
       
