@@ -8,7 +8,7 @@ describe('Checkers Game', () => {
   it('Visit the Checkers game page and let the CPU take a piece', () => {
     // Visit the checkers page, accept cookies and restart the game
     signInPage.goToApp('Checkers');
-//    checkersPage.acceptCookies();
+    checkersPage.acceptCookies();
     checkersPage.restartGame();
     checkersPage.checkMessage("Select an orange piece to move.");
     // Move a piece
