@@ -13,4 +13,4 @@ jobs:
           node-version: '14'
           cache: npm
       - run: npm ci
-      - run: npm tests --headless
+      - run: npm run tests --headless
