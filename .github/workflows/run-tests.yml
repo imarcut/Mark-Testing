@@ -13,5 +13,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0 # use the explicit version number
         with:
-          build: ./node_modules/.bin/npm run build
-          start: ./node_modules/.bin/npm start
+          run: ./node_modules/.bin/cypress run
