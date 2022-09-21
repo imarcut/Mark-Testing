@@ -4,5 +4,6 @@
   "screenshotsFolder": "cypress/test-artifacts/screenshots",
   "screenshotOnRunFailure": true,
   "watchForFileChanges": false,
-  "baseUrl": "http://deckofcardsapi.com/api"
+  "baseUrl": "http://deckofcardsapi.com/api",
+  "videoCompression": false
 }
