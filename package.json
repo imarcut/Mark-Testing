@@ -1,12 +1,8 @@
 {
-  "name": "thinksurance-task",
+  "name": "flexiana-task",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/imarcut/TaskAutomation.git"
-  },
   "scripts": {
     "cy": "cypress open",
     "report": "node generate-report.js",
@@ -18,13 +14,5 @@
     "cucumber-html-reporter": "^5.5.0",
     "cypress": "^9.2.1",
     "cypress-cucumber-preprocessor": "^4.3.1"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/test-artifacts",
-      "filePrefix": "Auto_"
-    }
   }
 }

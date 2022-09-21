@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4bf3eca1-571c-4014-a8d7-ad57ce03d058" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentationForTestCases.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwagLabsBug.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/constants/UI/baseURLs.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/constants/UI/baseURLs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/API/getUserTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/UI/checkoutTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/page-objects/cartPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/page-objects/productsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/page-objects/signInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/page-objects/signInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/services/userService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23ow4Ur5pfvsGIkxzzo3x17C06c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark1on\Desktop\Thinksurance-Task\TaskAutomation\cypress\integration" />
+      <recent name="C:\Users\Mark1on\Desktop\Thinksurance Task\TaskAutomation\cypress\constants\UI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark1on\Desktop\Thinksurance-Task\TaskAutomation\cypress\integration" />
+      <recent name="C:\Users\Mark1on\Desktop\Thinksurance Task\TaskAutomation\cypress\constants\API" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bf3eca1-571c-4014-a8d7-ad57ce03d058" name="Changes" comment="" />
+      <created>1642413559167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642413559167</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,5 +1,2 @@
 node_modules
-.idea
-.vs
 .git
-cypress/videos
