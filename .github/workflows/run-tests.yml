@@ -1,12 +1,17 @@
-name: learn-github-actions
+name: Cypress Tests
+
 on: [push]
+
 jobs:
-  run-cypress-tests:
+  cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v4.x.x # use the explicit version number
         with:
-          node-version: '14'
-      - run: npm install
-      - run: ./node_modules/.bin/cypress run --headless
+          build: npm run build
+          start: npm start
