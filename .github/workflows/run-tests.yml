@@ -7,8 +7,6 @@ jobs:
   types:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo, submodules and composite actions
-        uses: cypress-io/github-action@v4.2.0 # use the explicit version number
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v3
         with:
